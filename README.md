@@ -31,7 +31,13 @@ _____________________________________________________________________________
 * Change the color of the text on the page
 
 ## Menu Page in `menu.html`
-* Set a background color on the `<body>` using a pretty [hex color](https://www.google.com/search?q=hex+color+picker&oq=hex+color+picker&aqs=chrome.0.35i39j0l5.3193j0j1&sourceid=chrome&ie=UTF-8)
+* Put an `id` on the `<body>`. See below for an example
+  ``` HTML
+  <body id="menu-body">
+    ...
+  </body>
+  ```
+* In style.css select the `id` to add a background color on the `<body>` using a pretty [hex color](https://www.google.com/search?q=hex+color+picker&oq=hex+color+picker&aqs=chrome.0.35i39j0l5.3193j0j1&sourceid=chrome&ie=UTF-8)
 * Add a `<div>` inside the `<body>` and put the `id` "menu" on it like this:
   ``` HTML
     <body id="home-body">
