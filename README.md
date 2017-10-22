@@ -22,7 +22,7 @@ _____________________________________________________________________________
 * Add a brief bio for the restaurant using a `<p>` tag.
 * Put an `id` on the `<body>`. See below for an example
   ``` HTML
-  <body id="example-id">
+  <body id="home-body">
     ...
   </body>
   ```
@@ -34,7 +34,7 @@ _____________________________________________________________________________
 * Set a background color on the `<body>` using a pretty [hex color](https://www.google.com/search?q=hex+color+picker&oq=hex+color+picker&aqs=chrome.0.35i39j0l5.3193j0j1&sourceid=chrome&ie=UTF-8)
 * Add a `<div>` inside the `<body>` and put the `id` "menu" on it like this:
   ``` HTML
-    <body>
+    <body id="home-body">
       <div id="menu">
 
       </div>
@@ -42,7 +42,7 @@ _____________________________________________________________________________
   ```
 * Use `<ol>`, `<li>`, and `<p>` tags to create menu items. For example:
   ``` HTML
-    <body>
+    <body id="home-body">
       <div id="menu">
         <ul>
           <li class="menu-item">
@@ -85,14 +85,14 @@ _____________________________________________________________________________
 * In `style.css` select everything with the class `item` to make the food names bold. HINT: you will use the CSS `font-weight` property
 * In `style.css` select everything with the class `description` make the food descriptions italicized
 * Add a border to your `<ul>` to make a double border on the page
-* Add the [`hover` effect](https://www.w3schools.com/cssref/sel_hover.asp) to your `menu-item`s, so that when you hover on each item some of the colors change. (or something else changes!)
+* Add the [`hover` effect](https://www.w3schools.com/cssref/sel_hover.asp) to everything with the class `menu-item`, so that when you hover on each item some of the colors change. (or something else changes!)
 
 _____________________________________________________________________________
 ## LEVEL THREE
 
 ### Home Page 
 * In `script.js` select the nav bar by it's `id` using jQuery and save it in a variable called `navBar`. It will look something like this 
-  ` var exampleSelect = $("#example-id") `
+  ` var exampleSelect = $("#example-id"); `
 * Make your navigation bar slowly fade in when the page loads. Hint: you will need to use the jQuery [fadeIn() function](http://api.jquery.com/fadein/). Google it if you forget how it works.
 * Get rid of the underlines on the link tags in your navigation. Google "how to remove underlines from link tags with CSS"
 
@@ -100,7 +100,7 @@ _____________________________________________________________________________
 * Create a secret spot on the page. When the user clicks on it, they will be alerted with a super secret menu item! Follow the steps below:
   * Create a new HTML element to be clicked or decide which old HTML element you would like to use. Add an id to the element so that it is easy to select using jQuery.
   * Select your element in `script.js` using jQuery and save it in a variable.
-    * ``` var exampleVariable = $("#example-id") ```
+    * ``` var exampleVariable = $("#example-id"); ```
   * Call the [click() jQuery function](https://api.jquery.com/click/) on your variable. 
   * When the user clicks on the secret spot use the [alert() function](https://www.w3schools.com/jsref/met_win_alert.asp) to create a pop up saying the super secret menu item
 
