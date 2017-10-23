@@ -79,7 +79,7 @@ _____________________________________________________________________________
 ## LEVEL TWO
 
 ## Home Page in `home.html`
-* Try changing your background color to be a [linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient) instead of one solid color
+* Try changing your background color to be a [linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient) instead of one solid color in `style.css`
 * Add a [google font](https://fonts.google.com/) to your page.
   * Click on the red plus sign of the font you want to use
   * Click on the black bar at the bottom of the page that says 1 Family Selected
@@ -99,7 +99,12 @@ _____________________________________________________________________________
 ### Home Page 
 * In `script.js` select the nav bar by it's `id` using jQuery and save it in a variable called `navBar`. It will look something like this 
   ` var exampleSelect = $("#example-id"); `
-* Make your navigation bar slowly fade in when the page loads. Hint: you will need to use the jQuery [fadeIn() function](http://api.jquery.com/fadein/). Google it if you forget how it works.
+* We are going to make your navbar slowly fade in:
+  * First hide your navbar. This will look something like this:
+    ``` 
+      exampleSelect.hide()
+    ```
+  * Use the [fadeIn() function](http://api.jquery.com/fadein/) to make the navbar fade in. Google it if you forget how it works.[fadeIn() function](http://api.jquery.com/fadein/). Google it if you forget how it works.
 * Get rid of the underlines on the link tags in your navigation. Google "how to remove underlines from link tags with CSS"
 
 ## Menu Page
